@@ -59,11 +59,7 @@ public function register(Request $request)
         'password' => 'required|confirmed|min:8',
     ]);
 
-    $user = User::create([
-        'name' => $request->input('name'),
-        'email' => $request->input('email'),
-        'password' => bcrypt($request->input('password')),
-    ]);
+   
 
     Auth::login($user);
 
