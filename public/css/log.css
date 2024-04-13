@@ -1,0 +1,25 @@
+.log-list {
+    margin-top: 20px;
+}
+
+.log-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.log-item:nth-child(even) {
+    background-color: #f8f9fa; /* Светлый серый фон для четных элементов */
+}
+
+.log-item:nth-child(odd) {
+    background-color: #dee2e6; /* Светлый серый фон для нечетных элементов */
+}
+
+.log-item .badge {
+    margin-right: 10px;
+}
+
+h1{
+    color: #fff;
+}

@@ -1,0 +1,42 @@
+/* Общие стили для контейнера */
+.container {
+    padding: 20px;
+}
+
+li{
+    color: #fff;
+}
+
+/* Стили для заголовка */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Стили для кнопки */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для списка */
+.list-group-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Стили для информационного сообщения */
+.alert-info {
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    color: #004085;
+}

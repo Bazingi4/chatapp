@@ -1,0 +1,213 @@
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3F3F3F #222;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #222;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #3F3F3F;
+    border-radius: 20px;
+    border: 3px solid #222;
+  }
+
+
+div > .name-chat{
+    width: max-content;
+    height: 2em;
+    border-radius: 14px;
+    padding: 10px 10px 10px 10px;
+    background: #3F3F3F;
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    border-radius: 44px;
+    background: #222;
+    
+}
+
+.section-chat{
+    border-radius: 38px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: #2C2C2C;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0em 0em -0.5em;
+    padding: 10px 10px;
+}
+
+
+.sent {
+    box-sizing: border-box;
+    text-align: right;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 40px;
+    min-width: 20px;
+    max-width: 50vw;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    margin: 8px 26px 8px 0;
+    font-size: 16px;
+    line-height: 1.5em;
+    position: relative;
+    transition: width .3s ease-in-out;
+    background-image: linear-gradient(to bottom, #105fc0, #105fc0, #105fc0);
+    background-size: 100vw 100vh;
+    background-position-y: 100vh;
+    background-attachment: fixed;
+    width: max-content;
+    align-self: flex-end; /* Выравниваем по правому краю */
+    transform: scaleX(1); /* Переворачиваем по вертикали */
+}
+
+.received {
+    box-sizing: border-box;
+    text-align: left; /* Изменено на left */
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 40px;
+    min-width: 20px;
+    max-width: 50vw;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    margin: 8px 0 8px 26px; /* Изменено значение margin */
+    font-size: 14px;
+    line-height: 1.5em;
+    position: relative;
+    transition: width .3s ease-in-out;
+    background-image: linear-gradient(to bottom, #4A4848, #4A4848, #4A4848);
+    background-size: 100vw 100vh;
+    background-position-y: 100vh;
+    background-attachment: fixed;
+    width: max-content;
+    align-self: flex-start; /* Выравниваем по левому краю */
+    transform: scaleX(1); /* Переворачиваем по вертикали */
+}
+
+
+
+
+form {
+    margin-top: 48px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #4A4848;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.custom-input {
+    display: flex;
+    align-items: center;
+}
+
+.custom-input input {
+    width: 100%; /* Используйте 100%, чтобы растянуть на всю ширину */
+    padding: 15px;
+    border-radius: 25px;
+    background: #1E1D1D;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    text-align: left;
+    outline: none; /* Убирает рамку фокуса */
+}
+
+.custom-input input::placeholder {
+    color: #999;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.custom-input button {
+    padding: 15px;
+    background-color: #2C2C2C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+
+
+
+button {
+    padding: 10px;
+    background-color: #2C2C2C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 1em;
+}
+
+.file-icon {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.section-chat img {
+    max-width: 300px; /* Максимальная ширина изображения */
+    height: auto;
+    border-radius: 10px; /* Округление углов */
+    cursor: pointer; /* Курсор в виде указателя при наведении на изображение */
+}
+
+/* Стили для модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal img {
+    max-width: 100%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+}
+
+.file-avatar {
+    font-size: 20px;
+}

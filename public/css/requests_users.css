@@ -1,0 +1,58 @@
+/* Стили для контейнера */
+.container {
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff; /* Цвет текста */
+}
+
+/* Стили для заголовка */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Стили для сообщения об отсутствии заявок */
+.alert-info {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Стили для таблицы */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Стили для ячеек заголовка таблицы */
+.table th {
+    background-color: #343a40;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Стили для ячеек данных таблицы */
+.table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    color: #000000; /* Цвет текста */
+    margin-bottom: 10px; /* Отступ между строками таблицы */
+}
+
+/* Полосатый фон строк таблицы */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+/* Стили для ссылок в ячейках данных таблицы */
+.table td a {
+    color: #ffffff;
+    background-color: #58605a;
+    padding: 10px;
+    border-radius: 10px;
+}
